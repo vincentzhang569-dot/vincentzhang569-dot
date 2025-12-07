@@ -18,15 +18,6 @@ Full-stack AI application engineer focusing on building agentic, multimodal and 
 
 
 ---
-#### 🛠️ Tech Stack | 技术栈
-*   **Frontend**: Streamlit (Native Navigation, Custom CSS injection for Mobile-First design)
-*   **LLM Core**: OpenAI SDK (Compatible with SiliconFlow API)
-    *   *Vision*: Qwen-VL-Max / Qwen2-VL-72B
-    *   *Agent*: Qwen2.5-Coder-32B-Instruct (Optimized for JSON output)
-*   **Data Engineering**: Pandas, NumPy (Synthetic Data Generation)
-*   **Visualization**: Plotly Interactive Charts
-*   **Backend Logic**: Python Class-based State Management (`RobotController`)
----
 
 ## 📺 核心功能演示 (Features)
 
@@ -55,6 +46,15 @@ Full-stack AI application engineer focusing on building agentic, multimodal and 
 *   **设备管理例会**：通过 IoT 大屏回看一段时间内的关键设备异常点，筛选重点维护对象。
 
 *   **工业软件二次开发**：将 Agentic Controller 接入现有 MES / SCADA，实现自然语言控制产线。
+---
+#### 🛠️ Tech Stack | 技术栈
+*   **Frontend**: Streamlit (Native Navigation, Custom CSS injection for Mobile-First design)
+*   **LLM Core**: OpenAI SDK (Compatible with SiliconFlow API)
+    *   *Vision*: Qwen-VL-Max / Qwen2-VL-72B
+    *   *Agent*: Qwen2.5-Coder-32B-Instruct (Optimized for JSON output)
+*   **Data Engineering**: Pandas, NumPy (Synthetic Data Generation)
+*   **Visualization**: Plotly Interactive Charts
+*   **Backend Logic**: Python Class-based State Management (`RobotController`)
 ---
 
 #### 📫 Connect with me | 联系我
