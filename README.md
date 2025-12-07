@@ -1,5 +1,7 @@
 ### Hi there, I'm Vincent Zhang! 👋
 
+
+
 **🏭 Industrial AI Brain v2.0 | 工业智脑综合管理平台**
 
 **一个基于 LLM Agent 的工业 4.0 边缘侧综合解决方案。集成了多模态故障诊断、IoT 数据实时大屏与自然语言设备控制中枢。**
