@@ -8,6 +8,14 @@ Full-stack AI application engineer focusing on building agentic, multimodal and 
 
 ---
 
+#### 🏆 Featured Project | 代表作
+
+**🏭 Industrial AI Brain v2.0 | 工业智脑综合管理平台**
+
+[🔗 **View Project Source Code / 点击查看项目代码**](https://github.com/vincentzhang569-dot/my-ai-brain)
+
+
+---
 #### 🛠️ Tech Stack | 技术栈
 *   **Frontend**: Streamlit (Native Navigation, Custom CSS injection for Mobile-First design)
 *   **LLM Core**: OpenAI SDK (Compatible with SiliconFlow API)
@@ -16,13 +24,6 @@ Full-stack AI application engineer focusing on building agentic, multimodal and 
 *   **Data Engineering**: Pandas, NumPy (Synthetic Data Generation)
 *   **Visualization**: Plotly Interactive Charts
 *   **Backend Logic**: Python Class-based State Management (`RobotController`)
----
-
-#### 🏆 Featured Project | 代表作
-
-**🏭 Industrial AI Brain v2.0 | 工业智脑综合管理平台**
-
-[🔗 **View Project Source Code / 点击查看项目代码**](https://github.com/vincentzhang569-dot/my-ai-brain)
 ---
 
 ## 📺 核心功能演示 (Features)
