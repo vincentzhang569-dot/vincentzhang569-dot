@@ -6,7 +6,7 @@
 
 **一个基于 LLM Agent 的工业 4.0 边缘侧综合解决方案。集成了多模态故障诊断、IoT 数据实时大屏与自然语言设备控制中枢。**
 
-Full-stack AI application engineer focusing on building agentic, multimodal and data-intensive applications on top of LLMs for real-world industrial scenarios.
+A comprehensive edge-side Industry 4.0 solution built on LLM agents, integrating multimodal fault diagnosis, real-time IoT data dashboards, and a natural-language device control hub.
 
 ---
 
