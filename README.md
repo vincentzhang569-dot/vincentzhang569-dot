@@ -20,7 +20,6 @@ Full-stack AI application engineer focusing on building agentic, multimodal and 
 
 #### 🏆 Featured Project | 代表作
 
-**🤖 Industrial Robot Intelligent Fault Diagnosis System v2.0**
 **🏭 Industrial AI Brain v2.0 | 工业智脑综合管理平台**
 
 [🔗 **View Project Source Code / 点击查看项目代码**](https://github.com/vincentzhang569-dot/my-ai-brain)
