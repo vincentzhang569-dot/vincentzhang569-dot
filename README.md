@@ -49,6 +49,14 @@ Full-stack AI application engineer focusing on building agentic, multimodal and 
 *   **鲁棒性设计**：内置 JSON 强力解析引擎与参数清洗机制，确保指令执行 100% 成功率。
 ---
 
+### 🏭 典型应用场景 (Use Cases)
+*   **夜班班组长**：上传报警照片，即时获得故障诊断与排查步骤，生成标准化记录。
+
+*   **设备管理例会**：通过 IoT 大屏回看一段时间内的关键设备异常点，筛选重点维护对象。
+
+*   **工业软件二次开发**：将 Agentic Controller 接入现有 MES / SCADA，实现自然语言控制产线。
+---
+
 #### 📫 Connect with me | 联系我
 *   **Focus**: Industrial AI Application & Agentic Workflow
 *   **Email**: *vincentzhang569@gmail.com]*
