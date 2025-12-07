@@ -1,113 +1,14 @@
-# 🏭 Industrial AI Brain v2.0 | 工业智脑综合管理平台
+### Hi there, I'm Vincent Zhang! 👋
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![AI Model](https://img.shields.io/badge/Model-Qwen2.5--Coder%20%7C%20Qwen--VL-violet)
-![Framework](https://img.shields.io/badge/Framework-Streamlit-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+**🏭 Industrial AI Brain v2.0 | 工业智脑综合管理平台**
 
-> **一个基于 LLM Agent 的工业 4.0 边缘侧综合解决方案：把多模态故障诊断、IoT 实时大屏、自然语言设备控制统一在一个“工业大脑”里。适合部署在工厂中控室、产线长办公电脑或运维工程师平板上。**
+**一个基于 LLM Agent 的工业 4.0 边缘侧综合解决方案。集成了多模态故障诊断、IoT 数据实时大屏与自然语言设备控制中枢。**
+
+Full-stack AI application engineer focusing on building agentic, multimodal and data-intensive applications on top of LLMs for real-world industrial scenarios.
 
 ---
 
-## 📺 核心功能概览 (Feature Overview)
-
-### 1. 🚑 智能故障诊断 (Intelligent Diagnosis)
-
-基于 **Qwen-VL 系列视觉大模型 + RAG 文档问答**：
-
-- **看图就能诊断**：上传设备报警界面 / 现场照片，AI 自动识别：
-  - 报警代码 / 报错信息
-  - 关键 UI 元素（温度、转速、状态灯等）
-- **专家级思维链报告**：内置“资深维修工程师”风格 Prompt，输出结构化诊断结果：
-  - 「故障现象 → 根因分析 → 排查步骤 → 安全警示」
-- **文档级知识库问答**：
-  - 支持上传维修手册 / 说明书（PDF 等）
-  - 基于 RAG 的“段落级精确问答”，可追溯到原文位置，方便审核与交接
-
-> 目标：让一线班组长也能拿到接近“20 年经验工程师”的故障分析结论。
-
----
-
-### 2. 📊 IoT 预测性维护大屏 (Predictive Maintenance Dashboard)
-
-基于 **Plotly + Streamlit** 的高互动可视化：
-
-- **实时监控视图**  
-  - 模拟 10 台工业机器人/设备的 **温度、振动、负载、运行状态** 数据流  
-  - 支持按设备、时间区间、指标类型筛选
-- **异常检测与预警**  
-  - 支持阈值告警（如温度 > 75°C 自动高亮）  
-  - 图表中对异常点做标记，方便追溯
-- **高性能数据管线**  
-  - 使用 `@st.cache_data` 对历史数据与特征工程结果进行缓存  
-  - 秒级加载大屏，适配多用户同时访问
-
-> 当前 Demo 使用合成数据，架构设计上可无缝替换为 OPC-UA / MQTT / 时序数据库等工业数据源。
-
----
-
-### 3. 🎮 AI 指挥官 (Agentic Controller) — **核心亮点**
-
-基于 **Function Calling / 工具调用** 的智能体工作流引擎：
-
-- **自然语言控制设备**  
-  - 输入「1 号机过热，先降负载到 60%，如果还超 75°C 就停机」  
-  - AI 解析为结构化指令 → 下发给内部 `RobotController` 模块
-- **一键宏指令**  
-  - 支持封装「一键启动整线 / 平滑停机 / 夜班节能模式」等复合逻辑  
-  - 方便班组长和调度员使用
-- **鲁棒性与安全设计**  
-  - 严格的 JSON 解析与参数校验：  
-    - 自动纠正温度单位（℃ / ℉）、设备 ID 书写错误等  
-    - 对不安全指令（如直接高负载启动长期停机设备）进行拦截与二次确认
-  - 为接入真实 PLC / MES / SCADA 预留接口层（目前为模拟执行层）
-
-> 这个模块是将 LLM 变成“生产指挥官”的关键，而不仅仅是一个聊天机器人。
-
----
-
-## 🧩 系统架构 (System Architecture)
-
-从“老板视角”到“工程师视角”的整体设计如下：
-
-```text
-[Operator / Engineer]
-        │  自然语言 & 图片
-        ▼
- ┌──────────────────────┐
- │   Streamlit Web UI   │  ← 多页面：故障诊断 / IoT 大屏 / AI 指挥官
- └──────────────────────┘
-        │  调用
-        ▼
- ┌────────────────────────────┐
- │   LLM Agent Orchestrator   │
- │      (Qwen2.5 / Qwen-VL)   │
- └────────────────────────────┘
-   │          │           │
-   │          │           │
-   ▼          ▼           ▼
-[Vision Tool] [RAG 工具]  [Control Tool]
-   │          │           │
-设备图片   维修手册库      RobotController
-              │
-              ▼
-          知识检索/回答
-多模态入口：文本 + 图片输入统一到 Agent 层处理
-
-工具化能力：
-
-vision_tool：处理图片理解与故障识别
-
-rag_tool：面向文档的检索与问答
-
-control_tool：将自然语言转成结构化设备控制指令
-
-边缘侧友好：全部基于 Python / Streamlit，可部署在工控机、工业 PC 或本地服务器
----
-
-## 🛠️ 技术架构 (Tech Stack)
-
+#### 🛠️ Tech Stack | 技术栈
 *   **Frontend**: Streamlit (Native Navigation, Custom CSS injection for Mobile-First design)
 *   **LLM Core**: OpenAI SDK (Compatible with SiliconFlow API)
     *   *Vision*: Qwen-VL-Max / Qwen2-VL-72B
@@ -115,12 +16,37 @@ control_tool：将自然语言转成结构化设备控制指令
 *   **Data Engineering**: Pandas, NumPy (Synthetic Data Generation)
 *   **Visualization**: Plotly Interactive Charts
 *   **Backend Logic**: Python Class-based State Management (`RobotController`)
-
 ---
 
-## 🚀 快速开始 (Quick Start)
+#### 🏆 Featured Project | 代表作
 
-### 1. 克隆仓库
-```bash
-git clone https://github.com/your-username/my-ai-brain.git
-cd my-ai-brain
+**🤖 Industrial Robot Intelligent Fault Diagnosis System v2.0**
+**🏭 Industrial AI Brain v2.0 | 工业智脑综合管理平台**
+
+[🔗 **View Project Source Code / 点击查看项目代码**](https://github.com/vincentzhang569-dot/my-ai-brain)
+---
+
+## 📺 核心功能演示 (Features)
+
+### 1. 🚑 智能故障诊断 (Intelligent Diagnosis)
+基于 **Qwen2-VL** 视觉大模型与 RAG 技术。
+*   **看图说话**：直接上传报错屏幕/设备照片，AI 自动识别故障代码。
+*   **专家思维链**：内置 20 年经验专家 Prompt，输出“根因分析-排查步骤-安全警示”标准化报告。
+*   **文档知识库**：支持上传维修手册 (PDF)，进行基于文档的精准问答。
+
+### 2. 📊 IoT 预测性维护大屏 (Predictive Maintenance Dashboard)
+基于 **Plotly** 与 **Streamlit** 的高性能数据可视化。
+*   **实时监控**：模拟 10 台工业机器人的温度、震动、负载数据流。
+*   **故障预警**：自动检测异常阈值（如温度 > 75°C），在图表中高亮显示。
+*   **高性能架构**：采用 `@st.cache_data` 实现数据缓存，秒级加载。
+
+### 3. 🎮 AI 指挥官 (Agentic Controller) - **核心亮点**
+基于 **Function Calling (工具调用)** 的智能体工作流。
+*   **自然语言控制**：输入“1号机过热，立马停机”，AI 自动解析意图。
+*   **一键宏指令**：支持“一键启动”、“全线停机”等复杂逻辑原子化封装。
+*   **鲁棒性设计**：内置 JSON 强力解析引擎与参数清洗机制，确保指令执行 100% 成功率。
+---
+
+#### 📫 Connect with me | 联系我
+*   **Focus**: Industrial AI Application & Agentic Workflow
+*   **Email**: *vincentzhang569@gmail.com]*
