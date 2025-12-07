@@ -21,7 +21,7 @@ I focus on integrating **Large Language Models (LLM)** with **Industrial Scenari
 **🤖 Industrial Robot Intelligent Fault Diagnosis System v2.0**
 **工业机器人智能故障诊断系统 v2.0**
 
-[🔗 **View Project Source Code / 点击查看项目代码**](https://github.com/vincentzhang569-dot/my-ai-brain)
+[🔗 **View Project Source Code / 点击查看项目代码**](https://my-ai-brain-ngxgc6mxyspvxsj5adqdyw.streamlit.app/)
 
 > *An intelligent diagnosis assistant designed for electrical maintenance engineers.*
 > *专为一线电气维修工程师设计的智能诊断助手。*
@@ -37,4 +37,4 @@ I focus on integrating **Large Language Models (LLM)** with **Industrial Scenari
 
 #### 📫 Connect with me | 联系我
 *   **Focus**: Industrial Internet, Predictive Maintenance, AI Agents
-*   **Email**: *vincentzhang569@gmail.com]*
+*   **Email**: *vincentzhang569@gmail.com*
