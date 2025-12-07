@@ -14,7 +14,7 @@ A comprehensive edge-side Industry 4.0 solution built on LLM agents, integrating
 
 **🏭 Industrial AI Brain v2.0 | 工业智脑综合管理平台**
 
-[🔗 **View Project Source Code / 点击查看项目代码**](https://github.com/vincentzhang569-dot/my-ai-brain)
+[🔗 **View Project Source Code / 点击查看项目代码**](https://my-ai-brain-ngxgc6mxyspvxsj5adqdyw.streamlit.app/commander)
 
 
 ---
